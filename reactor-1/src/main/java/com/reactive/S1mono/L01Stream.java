@@ -1,4 +1,4 @@
-package com.reactive.part1;
+package com.reactive.S1mono;
 
 import java.util.stream.Stream;
 

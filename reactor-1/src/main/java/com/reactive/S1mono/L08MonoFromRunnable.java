@@ -1,4 +1,4 @@
-package com.reactive.mono;
+package com.reactive.S1mono;
 
 import com.reactive.util.Util;
 import reactor.core.publisher.Mono;
