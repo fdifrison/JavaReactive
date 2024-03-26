@@ -31,6 +31,6 @@ public class DefaultSub implements Subscriber<Object> {
 
     @Override
     public void onComplete() {
-        System.out.printf("%s:onComplete", name);
+        System.out.printf("%s:onComplete%n", name);
     }
 }
