@@ -13,9 +13,7 @@ public class L06OnError {
                 .map(i -> 10 / (5 - i))
 //                .onErrorReturn(-1) // handle an error with a fallback
 //                .onErrorResume(e -> fallback())
-                .onErrorContinue( (err, o) -> {
-                    System.out.println("Keep going even if: "+ err.getMessage());
-                })
+                .onErrorContinue( (err, o) -> System.out.println("Keep going even if: "+ err.getMessage()))
                 .subscribe(Util.subscriber());
 
     }

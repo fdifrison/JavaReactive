@@ -6,9 +6,7 @@ import reactor.core.publisher.Flux;
 public class HandleCountry {
 
     public static void main(String[] args) {
-        Flux.generate(synchronousSink -> {
-                    synchronousSink.next(Util.faker().country().name());
-                })
+        Flux.generate(synchronousSink -> synchronousSink.next(Util.faker().country().name()))
                 .map(Object::toString)
                 .handle(((country, synchronousSink) -> {
                     if (country.equalsIgnoreCase("italy"))
