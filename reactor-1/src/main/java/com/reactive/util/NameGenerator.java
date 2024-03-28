@@ -7,6 +7,8 @@ import java.util.List;
 
 public class NameGenerator {
 
+
+
     public static List<String> getNamesFromList(int count) {
         List<String> list = new ArrayList<>(count);
         for (int i = 0; i < count; i++) {
