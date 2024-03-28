@@ -31,7 +31,7 @@ public class L06ParallelExecution {
                     syncList.add(integer);
                 });
 
-        Util.sleep(5);
+        Util.sleepSeconds(5);
         System.out.println("We expect list.size to be 1000 but array list is not thread-safe!");
         System.out.println("List size is: " + list.size());
         for (int i = 1; i <= 1000; i++) {

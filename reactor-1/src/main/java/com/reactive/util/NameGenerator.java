@@ -21,7 +21,7 @@ public class NameGenerator {
     }
 
     private static String getName() {
-        Util.sleep(1); // simulating an intensive task
+        Util.sleepSeconds(1); // simulating an intensive task
         return Util.faker().name().firstName();
     }
 

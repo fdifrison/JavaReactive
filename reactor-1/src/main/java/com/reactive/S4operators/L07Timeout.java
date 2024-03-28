@@ -15,7 +15,7 @@ public class L07Timeout {
                 .subscribe(Util.subscriber());
 
 
-        Util.sleep(60); // to stop the main thread and see the output
+        Util.sleepSeconds(60); // to stop the main thread and see the output
 
 
     }

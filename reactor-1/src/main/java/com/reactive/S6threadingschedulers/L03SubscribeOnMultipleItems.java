@@ -21,7 +21,7 @@ public class L03SubscribeOnMultipleItems {
                     printThreadName("create");
                     for (int i = 0; i < 5; i++) {
                         fluxSink.next(i);
-                        Util.sleep(1);
+                        Util.sleepSeconds(1);
                     }
                     fluxSink.complete();
                 })
@@ -41,7 +41,7 @@ public class L03SubscribeOnMultipleItems {
         }
 
 
-        Util.sleep(10);
+        Util.sleepSeconds(10);
 
     }
 

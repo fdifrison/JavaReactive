@@ -22,14 +22,14 @@ public class L05HotPublishCache {
         movieStream
                 .subscribe(Util.subscriber("Frodo"));
 
-        Util.sleep(4);
+        Util.sleepSeconds(4);
 
         // after a while, another user starts the same movie,
         // and since the streaming is cached, Sam will immediately get all the data
         movieStream
                 .subscribe(Util.subscriber("Sam"));
 
-        Util.sleep(20);
+        Util.sleepSeconds(20);
 
     }
 

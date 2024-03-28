@@ -20,7 +20,7 @@ public class L12FlatMap {
                 .subscribe(Util.subscriber());
 
 
-        Util.sleep(10); // to see what happens outside the main thread
+        Util.sleepSeconds(10); // to see what happens outside the main thread
 
     }
 }

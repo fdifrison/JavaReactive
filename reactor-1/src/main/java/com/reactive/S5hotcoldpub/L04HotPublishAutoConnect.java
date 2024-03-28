@@ -27,7 +27,7 @@ public class L04HotPublishAutoConnect {
         movieStream
                 .subscribe(Util.subscriber("Frodo"));
 
-        Util.sleep(4);
+        Util.sleepSeconds(4);
 
         System.out.println("Sam is about to join");
 
@@ -36,7 +36,7 @@ public class L04HotPublishAutoConnect {
         movieStream
                 .subscribe(Util.subscriber("Sam"));
 
-        Util.sleep(20);
+        Util.sleepSeconds(20);
 
     }
 

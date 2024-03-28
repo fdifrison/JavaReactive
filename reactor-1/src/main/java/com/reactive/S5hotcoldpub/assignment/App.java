@@ -20,7 +20,7 @@ public class App {
         revenueService.revenueStream()
                 .subscribe(Util.subscriber("RevenueManager"));
 
-        Util.sleep(60);
+        Util.sleepSeconds(60);
 
     }
 

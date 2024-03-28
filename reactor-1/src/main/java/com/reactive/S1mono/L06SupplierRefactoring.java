@@ -18,7 +18,7 @@ public class L06SupplierRefactoring {
 
         System.out.println("Am I executed before?");
 
-        Util.sleep(5); // I need to block the main thread to see the asynchronous execution of the pipeline
+        Util.sleepSeconds(5); // I need to block the main thread to see the asynchronous execution of the pipeline
 
     }
 
@@ -27,7 +27,7 @@ public class L06SupplierRefactoring {
         System.out.println("Entered getName method...");
         return Mono.fromSupplier(() -> {
                     System.out.println("Generating name...");
-                    Util.sleep(3);
+                    Util.sleepSeconds(3);
                     return Util.faker().name().fullName();
                 }
         ).map(String::toUpperCase);

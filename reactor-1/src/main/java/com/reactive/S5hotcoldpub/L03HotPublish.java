@@ -28,14 +28,14 @@ public class L03HotPublish {
         movieStream
                 .subscribe(Util.subscriber("Frodo"));
 
-        Util.sleep(6);
+        Util.sleepSeconds(6);
 
         // after a while, another user starts the same movie,
         // but the first already finished, hence the streaming will start from the beginning
         movieStream
                 .subscribe(Util.subscriber("Sam"));
 
-        Util.sleep(20);
+        Util.sleepSeconds(20);
 
     }
 

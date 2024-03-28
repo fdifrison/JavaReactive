@@ -12,7 +12,7 @@ public class L07MonoFromFuture {
         Mono.fromFuture(getName())
                 .subscribe(Util.onNext());
 
-        Util.sleep(1); // just to see the result from the ForkJoinPool
+        Util.sleepSeconds(1); // just to see the result from the ForkJoinPool
 
     }
 

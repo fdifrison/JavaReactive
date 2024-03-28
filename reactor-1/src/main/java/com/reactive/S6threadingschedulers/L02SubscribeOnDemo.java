@@ -30,7 +30,7 @@ public class L02SubscribeOnDemo {
                 .subscribe(v -> printThreadName("sub " + v));
 
 
-        Util.sleep(5);
+        Util.sleepSeconds(5);
 
     }
 

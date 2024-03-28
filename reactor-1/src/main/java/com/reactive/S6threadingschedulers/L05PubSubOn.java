@@ -31,7 +31,7 @@ public class L05PubSubOn {
                 .subscribeOn(Schedulers.boundedElastic())
                 .subscribe(v -> printThreadName("sub " + v));
 
-        Util.sleep(5);
+        Util.sleepSeconds(5);
 
     }
 

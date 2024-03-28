@@ -28,7 +28,7 @@ public class L04PublishOnDemo {
                 // for example, we might switch to parallel because we are expecting a cpu intensive task following
                 .subscribe(v -> printThreadName("sub " + v));
 
-        Util.sleep(5);
+        Util.sleepSeconds(5);
 
     }
 

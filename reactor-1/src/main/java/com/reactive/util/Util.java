@@ -26,13 +26,18 @@ public class Util {
         return FAKER;
     }
 
-    public static void sleep(int seconds) {
+    public static void sleepSeconds(int seconds) {
+        sleepMillis(seconds * 1000);
+    }
+
+    public static void sleepMillis(int millis) {
         try {
-            Thread.sleep(seconds * 1000L);
+            Thread.sleep(millis);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
     }
+
 
     public static Subscriber<Object> subscriber() {
         return new DefaultSub();

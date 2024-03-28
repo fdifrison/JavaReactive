@@ -18,13 +18,13 @@ public class L02HotShare {
         movieStream
                 .subscribe(Util.subscriber("Frodo"));
 
-        Util.sleep(3);
+        Util.sleepSeconds(3);
 
         // after a while, another user starts the same movie
         movieStream
                 .subscribe(Util.subscriber("Sam"));
 
-        Util.sleep(20);
+        Util.sleepSeconds(20);
 
     }
 

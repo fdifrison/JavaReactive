@@ -20,7 +20,7 @@ public class L08MonoFromRunnable {
 
     private static  Runnable timeConsumingProcess() {
         return () -> {
-            Util.sleep(3);
+            Util.sleepSeconds(3);
             System.out.println("Finally I'm done!");
         };
     }

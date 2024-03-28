@@ -12,7 +12,7 @@ public class L08FluxFromInterval {
         Flux.interval(Duration.ofSeconds(1)) //publish item periodically (non-blocking using thread pool)
                 .subscribe(Util.onNext());
 
-        Util.sleep(5); // to stop the main thread and see what the flux is providing
+        Util.sleepSeconds(5); // to stop the main thread and see what the flux is providing
 
     }
 

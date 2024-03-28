@@ -39,14 +39,14 @@ public class L06FluxSubscription {
                                }
                 );
 
-        Util.sleep(3);
+        Util.sleepSeconds(3);
         atomicReference.get().request(3);
-        Util.sleep(5);
+        Util.sleepSeconds(5);
         atomicReference.get().request(3);
-        Util.sleep(5);
+        Util.sleepSeconds(5);
         System.out.println("Cancelling subscription...");
         atomicReference.get().cancel();
-        Util.sleep(5);
+        Util.sleepSeconds(5);
         atomicReference.get().request(3); // nothing will happen since we canceled the subscription before
         // one we cancel the subscription we can't invoke for more items
 

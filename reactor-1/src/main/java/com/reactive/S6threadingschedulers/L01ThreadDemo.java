@@ -27,7 +27,7 @@ public class L01ThreadDemo {
             new Thread(runnable).start(); // everything will happen in the new Thread
         }
 
-        Util.sleep(5);
+        Util.sleepSeconds(5);
 
     }
 

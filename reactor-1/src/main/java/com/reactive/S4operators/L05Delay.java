@@ -24,7 +24,7 @@ public class L05Delay {
         // of the request, the subscriber will ask for more data
 
 
-        Util.sleep(5);
+        Util.sleepSeconds(5);
 
     }
 
